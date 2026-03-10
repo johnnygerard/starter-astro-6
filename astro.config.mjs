@@ -13,9 +13,6 @@ export default defineConfig({
   site: "https://starter-astro-6.mail-25a.workers.dev",
   trailingSlash: "never",
   vite: {
-    plugins: [
-      // @ts-expect-error https://github.com/withastro/astro/issues/14030
-      tailwindcss(),
-    ],
+    plugins: [tailwindcss()],
   },
 });
