@@ -1,6 +1,6 @@
 ---
+import { Font } from "astro:assets";
 import Favicon from "~/components/Favicon.astro";
-import FontLinks from "~/components/starter/FontLinks.astro";
 import "~/styles/globals.css";
 import { tw } from "~/utils/tw";
 
@@ -11,7 +11,7 @@ type Props = {
 const { title } = Astro.props;
 
 const starterStyles = tw([
-  "bg-neutral-950 font-[Geist,sans-serif] text-base text-neutral-100",
+  "bg-neutral-950 font-sans text-base text-neutral-100",
   "selection:bg-neutral-200 selection:text-neutral-900",
 ]);
 ---
@@ -20,7 +20,7 @@ const starterStyles = tw([
 <html lang="en-US">
   <head>
     <meta charset="utf-8" />
-    <FontLinks />
+    <Font cssVariable="--font-geist" preload />
     <Favicon />
     <meta name="generator" content={Astro.generator} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
