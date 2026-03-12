@@ -1,8 +1,11 @@
 ---
 import Layout from "~/layouts/Layout.astro";
+
+const DESCRIPTION =
+  "Sorry, the page you are looking for does not exist or has been moved.";
 ---
 
-<Layout title="404 – Page Not Found">
+<Layout title="404 – Page Not Found" description={DESCRIPTION} indexed={false}>
   <div class="mx-auto w-full max-w-3xl px-6 py-16 text-center">
     <hgroup>
       <p class="text-xs tracking-[0.3em] text-neutral-400 uppercase">
@@ -14,9 +17,7 @@ import Layout from "~/layouts/Layout.astro";
         Page Not Found
       </h1>
     </hgroup>
-    <p class="mt-2 text-base text-neutral-300">
-      Sorry, the page you are looking for does not exist or has been moved.
-    </p>
+    <p class="mt-2 text-base text-neutral-300">{DESCRIPTION}</p>
 
     <div class="mt-10 flex items-center justify-center">
       <a
