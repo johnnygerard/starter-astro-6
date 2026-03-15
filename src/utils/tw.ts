@@ -10,8 +10,8 @@ import { clsx, type ClassValue } from "clsx";
  * const button = tw(
  *   "text-sm text-amber-50 font-semibold",
  *   {
- *     primary: "bg-amber-500 hover:bg-amber-600",
- *     secondary: "bg-amber-100 text-amber-700 hover:bg-amber-200",
+ *     "bg-amber-500 hover:bg-amber-600": isPrimary,
+ *     "bg-amber-100 text-amber-700 hover:bg-amber-200": isSecondary,
  *   },
  * );
  * ```
