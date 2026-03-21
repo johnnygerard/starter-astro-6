@@ -24,16 +24,6 @@ out [Creating a repository from a template](https://docs.github.com/en/repositor
 - **Unit testing**: [Vitest](https://vitest.dev/)
 - **End-to-end testing**: [Playwright](https://playwright.dev/)
 
-## How to Update
-
-To check for outdated packages, run `npm outdated`.
-
-```bash
-# Update dependencies (this will rewrite package-lock.json and package.json)
-npm update --save
-npm install --save-exact --save-dev prettier@latest prettier-plugin-astro@latest prettier-plugin-tailwindcss@latest
-```
-
 ## Notes
 
 - `.nvmrc` is used primarily as a way to specify the Node.js version for Cloudflare Workers (see [Build image](https://developers.cloudflare.com/workers/ci-cd/builds/build-image/))
