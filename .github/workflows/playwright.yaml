@@ -1,4 +1,4 @@
-name: E2E Check
+name: Playwright E2E Tests
 on:
   pull_request:
     branches: [main]
@@ -17,7 +17,7 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run Playwright tests
-        run: npm run e2e
+        run: npm run pw:e2e
 
       - name: Upload Playwright Report
         uses: actions/upload-artifact@v6
