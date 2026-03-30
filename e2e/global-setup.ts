@@ -1,6 +1,6 @@
-import { expect, test } from "@playwright/test";
+import { expect, test as setup } from "@playwright/test";
 
-test("Playwright is working", async ({ page }) => {
+setup("Playwright is working", async ({ page }) => {
   const response = await page.goto("/");
 
   expect(response?.status()).toBe(200);
