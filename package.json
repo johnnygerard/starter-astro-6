@@ -58,7 +58,7 @@
     "preview": "npm run build && astro preview --port 4322",
     "pw": "playwright",
     "pw:e2e": "playwright test",
-    "qa": "npm run format:check && npm run lint && npm test && npm run e2e",
+    "qa": "npm run format:check && npm run lint && npm test && npm run pw:e2e",
     "test": "vitest run",
     "test:watch": "vitest watch",
     "toolbar:disable": "astro preferences disable devToolbar",
