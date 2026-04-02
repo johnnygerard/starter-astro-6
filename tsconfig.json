@@ -13,6 +13,7 @@
     "__tests__",
     ".astro/types.d.ts",
     "astro.config.mjs",
+    "playwright.config.ts",
     "pw",
     "src",
     "vitest.config.ts"
