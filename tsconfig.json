@@ -1,10 +1,9 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
     "checkJs": true,
     "paths": {
-      "~/*": ["src/*"],
-      "~root/*": ["*"]
+      "~/*": ["./src/*"],
+      "~root/*": ["./*"]
     },
     "types": ["./worker-configuration.d.ts", "node"]
   },
@@ -13,6 +12,8 @@
     "__tests__",
     ".astro/types.d.ts",
     "astro.config.mjs",
+    "playwright.config.ts",
+    "pw",
     "src",
     "vitest.config.ts"
   ]
