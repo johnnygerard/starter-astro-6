@@ -35,6 +35,8 @@ export default defineConfig([
     ".wrangler/",
     "dist/",
     "package-lock.json",
+    "playwright-report/",
+    "test-results/",
     "worker-configuration.d.ts",
   ]),
 ]);
