@@ -22,6 +22,7 @@ export default defineConfig({
     },
   ],
   integrations: [sitemap()],
+  output: "static",
   site: "https://starter-astro-6.mail-25a.workers.dev",
   trailingSlash: "never",
   vite: {
