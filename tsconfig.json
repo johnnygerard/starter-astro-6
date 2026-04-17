@@ -11,10 +11,8 @@
   "include": [
     "__tests__",
     ".astro/types.d.ts",
-    "astro.config.mjs",
-    "playwright.config.ts",
+    "*.config.{mjs,js,ts}",
     "pw",
-    "src",
-    "vitest.config.ts"
+    "src"
   ]
 }
