@@ -1,4 +1,4 @@
-name: Build Check
+name: Build
 on:
   pull_request:
     branches: [main]
@@ -12,5 +12,8 @@ jobs:
       - name: Initialize environment
         uses: ./.github/actions/init
 
-      - name: Run build
+      - name: Build project
         run: npm run build
+
+      - name: Run checks
+        run: npm run check
