@@ -10,8 +10,10 @@ export default defineConfig({
     format: "file",
   },
   fonts: [
-    // Geist: sans-serif typeface
-    // @see https://fonts.google.com/specimen/Geist/about
+    /**
+     * Geist: sans-serif typeface
+     * @see https://fonts.google.com/specimen/Geist/about
+     */
     {
       cssVariable: "--font-geist",
       name: "Geist",
@@ -23,6 +25,18 @@ export default defineConfig({
   ],
   integrations: [sitemap()],
   output: "static",
+  session: {
+    /**
+     * Disable SESSION KV binding automatic provisioning
+     *
+     * This driver overrides the default driver from the Cloudflare adapter.
+     * @see https://unstorage.unjs.io/
+     * @see https://github.com/withastro/astro/pull/15803
+     */
+    driver: {
+      entrypoint: "unstorage/drivers/null",
+    },
+  },
   site: "https://starter-astro-6.mail-25a.workers.dev",
   trailingSlash: "never",
   vite: {
