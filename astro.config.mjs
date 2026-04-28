@@ -37,7 +37,7 @@ export default defineConfig({
       entrypoint: "unstorage/drivers/null",
     },
   },
-  site: "https://starter-astro-6.mail-25a.workers.dev",
+  site: "https://starter-astro-6.jgerard.workers.dev",
   trailingSlash: "never",
   vite: {
     plugins: [tailwindcss()],
